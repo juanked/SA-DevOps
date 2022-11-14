@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: edge-receiver
-        image: sanoderegistry.azurecr.io/receiver:10
+        image: sanoderegistry.azurecr.io/receiver:11
         imagePullPolicy: IfNotPresent
         # ports:
         # - name: http
