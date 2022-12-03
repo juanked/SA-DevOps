@@ -29,6 +29,9 @@ spec:
         - name: mqtt-2
           containerPort: 11883
           protocol: TCP
+        - name: internet
+          containerPort: 443
+          protocol: TCP
         securityContext:
           privileged: true
       imagePullSecrets:
