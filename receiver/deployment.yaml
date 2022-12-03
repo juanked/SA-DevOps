@@ -19,10 +19,13 @@ spec:
       - name: edge-receiver
         image: sanoderegistry.azurecr.io/receiver:22
         imagePullPolicy: IfNotPresent
-        # ports:
-        # - name: http
-        #   containerPort: 8080
-        #   protocol: TCP
+        ports:
+        - name: mqtt
+          containerPort: 1883
+          protocol: TCP
+        - name: mqtt-2
+          containerPort: 11883
+          protocol: TCP
         securityContext:
           privileged: true
       imagePullSecrets:
