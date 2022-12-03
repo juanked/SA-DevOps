@@ -9,8 +9,12 @@ ports:
   - port:  1883
     targetPort:  default
     protocol:  TCP
-    name:  default
-  - port:  8080
+    name:  mqtt
+  - port:  11883
+    targetPort:  default
+    protocol:  TCP
+    name:  mqtt-2
+  - port:  80
     targetPort:  websocket
     protocol:  TCP
     name:  websocket

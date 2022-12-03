@@ -29,8 +29,11 @@ spec:
         - name: mqtt-2
           containerPort: 11883
           protocol: TCP
-        - name: internet
+        - name: https
           containerPort: 443
+          protocol: TCP
+        - name: websocket
+          containerPort: 80
           protocol: TCP
         securityContext:
           privileged: true
