@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: receiver-service
+  name: receiver
 spec:
   selector:
     app.kubernetes.io/name: edge-receiver
