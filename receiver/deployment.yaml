@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: edge-receiver
-        image: sanoderegistry.azurecr.io/receiver:23
+        image: sanoderegistry.azurecr.io/receiver:24
         imagePullPolicy: IfNotPresent
         ports:
         - name: mqtt
