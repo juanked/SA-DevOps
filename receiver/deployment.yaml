@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: edge-receiver
-        image: sanoderegistry.azurecr.io/receiver:27
+        image: sanoderegistry.azurecr.io/receiver:29
         imagePullPolicy: IfNotPresent
         env:
         - name: NODE_NAME
