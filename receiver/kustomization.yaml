@@ -5,6 +5,6 @@ commonLabels:
   app: receiver
   
 resources:
-  # - service.yaml
+  - service.yaml
   - deployment.yaml
   # - hpa.yaml
