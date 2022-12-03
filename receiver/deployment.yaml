@@ -19,6 +19,11 @@ spec:
       - name: edge-receiver
         image: sanoderegistry.azurecr.io/receiver:24
         imagePullPolicy: IfNotPresent
+        env:
+          - name: NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
         ports:
         - name: mqtt
           containerPort: 1883
