@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: receiver
+  name: edge-receiver
+spec:
+  template:
+    spec:
+      nodeName: rasp1
+      containers:
+        env:
+        - name: NODE_NAME
+          value: "rasp1"
